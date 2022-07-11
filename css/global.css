@@ -1,0 +1,247 @@
+
+/****************************************************************************/
+/*                                                                          */
+/* Custom Color and Font Setup                                              */
+/*                                                                          */
+/****************************************************************************/
+
+:root /* Setting color variables */
+{
+    --limited: #164249;
+    --middleton: #AEBBBA;
+    --overdose: #EEF0ED;
+}
+
+@font-face /* Setting custom font */
+{
+    font-family: "Poor Richard Regular";
+    src: url(../fonts/poor_richard_regular.ttf) format("truetype");
+}
+
+/****************************************************************************/
+/*                                                                          */
+/* Built-In Page Layout Reformatting                                        */
+/*                                                                          */
+/****************************************************************************/
+
+html 
+{
+    color: var(--limited);
+    font-family: "Poor Richard Regular", Times New Roman, serif;
+}
+
+body
+{
+    background-color: var(--middleton);
+}
+
+header
+{
+    background-color: var(--limited);
+    width: 1200px;
+    height: 300px;
+    margin-top: 2.5% !important;
+    margin: 0 auto;
+    display: block;
+
+}
+
+header a
+{
+    box-shadow: none;
+}
+
+article
+{
+    background-color: var(--overdose);
+    width: 1050px;
+    margin-left: 75px;
+    margin-top: 3% !important;
+    margin-bottom: 4% !important;
+    padding: 25px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer
+{
+    width: 1200px;
+    height: 100px;
+    margin-bottom: 2.5%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
+}
+
+/****************************************************************************/
+/*                                                                          */
+/* Built-In Text-Related Reformatting                                       */
+/*                                                                          */
+/****************************************************************************/
+
+h1
+{
+    font-size: 50;
+    font-weight: normal;
+    margin: 10px;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 26;
+    font-weight: normal;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+h3
+{
+    font-size: 24;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+p
+{
+    font-size: 20;
+    font-weight: normal;
+    padding: 0px 10px;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Built-In Reformatting for Other Tags                                     */
+/*                                                                          */
+/****************************************************************************/
+
+img /* Reformatting images */
+{
+    width: 100%;
+    height: 100%;
+}
+
+a /* Reformatting links */
+{
+    color: var(--limited);
+    text-decoration: none;
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
+}
+
+span /* Reformatting spans */
+{
+    z-index: 1;
+}
+
+hr /* Reformatting horizontal rules */
+{
+    border-color: var(--limited);
+    size: 2px;
+    margin-bottom: 2px;
+}
+
+button /* Reformatting buttons */
+{
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Header Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+.title /* Class for the title of the header */
+{
+    color: var(--overdose);
+    font-size: 85;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.subtitle /* Class for the subtitle of the header */ 
+{
+    color: var(--overdose);
+    font-size: 40;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+nav /* Reformatting navigational stripe element */
+{
+    background-color: var(--overdose);
+    height: 30px;
+    padding: 5px 203px;
+    display: block;
+}
+
+.nav_item /* Class for menu items in the nav menu*/
+{
+    font-size: 26;
+    font-weight: normal;
+    text-align: center;
+    margin: 0px 20px;
+
+    display: inline-block;
+    z-index: 1;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Body Related Classes                                                     */
+/*                                                                          */
+/****************************************************************************/
+
+.horizontally_centered /* Class for centering an element vertically */
+{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.vertically_centered /* Class for centering an element vertically */
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered_text /* Reformatting standard text */
+{
+    margin-top: 5px;	
+    padding: 0px 50px;
+    text-align: center;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Footer Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+.footer_text /* Class for the text in the footer */
+{
+    font-size: 16;
+    margin: 10px;
+}
+
+.footer_text a /* Class to remove underline of footer links */
+{
+    box-shadow: none;
+}
+
+/****************************************************************************/
+
