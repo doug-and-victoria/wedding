@@ -1,0 +1,90 @@
+/****************************************************************************/
+/*                                                                          */
+/* Built-In Reformatting for Other Tags                                     */
+/*                                                                          */
+/****************************************************************************/
+
+img
+{
+    height: 450px;
+    width: auto;
+    margin: 10px;
+}
+a 
+{
+    box-shadow: none;
+}
+
+.row 
+{
+    text-align: center;
+}
+
+.column 
+{
+    display: inline-block;
+}
+
+.count-1 
+{
+    height: auto   !important;
+    width: 994.8px !important;
+}
+
+
+.count-3 
+{
+    height: auto    !important;
+    width: 318.27px !important;
+}
+
+.tall 
+{
+    height: 700px !important;
+    width: auto   !important;
+    margin-left: 25px;
+}
+
+.stacked 
+{
+    height: auto    !important;
+    width: 510px !important;
+}
+
+.lightbox 
+{
+    /* Default to hidden */
+    display: none;
+
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    /* A bit of padding around image */
+    padding: 1em;
+
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox:target /* Unhide the lightbox when it's the target */
+{
+    display: block;
+}
+
+.lightbox span 
+{
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
