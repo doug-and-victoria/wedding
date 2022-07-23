@@ -1,5 +1,3 @@
-var img_path = "https://media.githubusercontent.com/media/doug-and-victoria-websites/wedding-website/main"
-
 window.onclick = e => 
 {
     var src = e.target.src
