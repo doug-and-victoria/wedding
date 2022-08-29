@@ -7,10 +7,13 @@
 
 :root /* Setting color variables */
 {
-    --limited: #164249;
-    --middleton: #AEBBBA;
-    --overdose: #EEF0ED;
+    --limited:   #0E4732; /*#164249;*/
+    --middleton: #CCD1CA; /*#AEBBBA;*/
+    --overdose:  #FFFFFF; /*#EEF0ED;*/
 }
+
+
+
 
 @font-face /* Setting custom font */
 {
@@ -57,7 +60,7 @@ article
     width: 1050px;
     margin-left: 75px;
     margin-top: 3% !important;
-    margin-bottom: 4% !important;
+    margin-bottom: 3% !important;
     padding: 25px;
     margin: 0 auto;
     display: block;
@@ -179,7 +182,7 @@ nav /* Reformatting navigational stripe element */
 {
     background-color: var(--overdose);
     height: 30px;
-    padding: 5px 203px;
+    padding: 5px 247px;
     display: block;
 }
 
@@ -188,7 +191,7 @@ nav /* Reformatting navigational stripe element */
     font-size: 26;
     font-weight: normal;
     text-align: center;
-    margin: 0px 20px;
+    margin: 0px 25px;
 
     display: inline-block;
     z-index: 1;

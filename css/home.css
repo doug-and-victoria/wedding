@@ -1,0 +1,64 @@
+
+.content 
+{
+    padding: 40px;
+    padding-left: 0px;
+    width: 560px;
+    display: inline-block; 
+    vertical-align: center;
+    text-align: center;   
+ 
+    /*display: table;
+    clear: both;*/
+}
+
+.sched
+{
+    width: 120px; 
+    display: inline-block; 
+    vertical-align: top;
+
+    border-left-style: solid;
+    border-left-color: var(--limited);
+    border-left-width: 0.5px;
+
+    border-right-style: solid;
+    border-right-color: var(--limited);
+    border-right-width: 0.5px;
+}
+
+.leftmost 
+{
+    border-left-style: none;
+}
+
+.rightmost 
+{
+    border-right-style: none;
+}
+
+.big_img 
+{
+    height: auto;
+    width:  335px;
+    padding: 40px;
+    display: inline-block; 
+    vertical-align: top;
+
+    /*float: left;
+    position: relative;*/
+}
+
+.smol_img 
+{
+    height: 200px;
+    width:  auto;
+    padding: 40px;
+    margin-top: 420px;
+    margin-left: -250px;
+
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+
