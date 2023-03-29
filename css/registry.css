@@ -1,0 +1,33 @@
+.content 
+{
+    vertical-align: center;
+    text-align: center;   
+}
+
+.boxes 
+{
+    width: 300px;
+}
+
+h3 
+{
+    font-weight: bold;
+}
+
+img 
+{
+    height: 220px;
+    width: 220px;
+    margin: 10px 40px;
+}
+
+a 
+{
+    text-decoration: none !important;
+    box-shadow: none;
+    border:0px !important;
+    outline:none;
+    border-width: 0px;
+    outline-width:0px;
+    border-bottom: none;
+}

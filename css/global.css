@@ -12,9 +12,36 @@
     --overdose:  #FFFFFF; /*#EEF0ED;*/
 }
 
+@font-face /* Setting custom font */
+{
+    font-family: "Callient";
+    src: url(../fonts/callient.ttf) format("truetype");
+}
 
+@font-face /* Setting custom font */
+{
+    font-family: "Brittany Signature";
+    src: url(../fonts/brittany_signature.ttf) format("truetype");
+}
 
+@font-face /* Setting custom font */
+{
+    font-family: "August July";
+    src: url(../fonts/august_july.ttf) format("truetype");
+}
 
+@font-face /* Setting custom font */
+{
+    font-family: "Real One Specific Script";
+    src: url(../fonts/real_one_specific_script.ttf) format("truetype");
+}
+    
+@font-face /* Setting custom font */
+{
+    font-family: "Cormorant Garamond";
+    src: url(../fonts/cormorant_garamond_medium.ttf) format("truetype");
+}
+    
 @font-face /* Setting custom font */
 {
     font-family: "Poor Richard Regular";
@@ -30,20 +57,27 @@
 html 
 {
     color: var(--limited);
-    font-family: "Poor Richard Regular", Times New Roman, serif;
+    font-family: "Cormorant Garamond", Times New Roman, serif;
+
+    background: url(../images/flowers7-40pct.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
-body
-{
-    background-color: var(--middleton);
-}
+
+body { }
 
 header
 {
     background-color: var(--limited);
     width: 1200px;
-    height: 300px;
+    height: 265px;
     margin-top: 2.5% !important;
+    margin-bottom: 10px !important;
     margin: 0 auto;
     display: block;
 
@@ -57,20 +91,19 @@ header a
 article
 {
     background-color: var(--overdose);
-    width: 1050px;
-    margin-left: 75px;
-    margin-top: 3% !important;
-    margin-bottom: 3% !important;
-    padding: 25px;
+    width: 1120px;
     margin: 0 auto;
+    padding: 0px 40px;
     display: block;
 }
 
 footer
 {
+    background-color: var(--limited);
     width: 1200px;
-    height: 100px;
-    margin-bottom: 2.5%;
+    height: 40px;
+    margin-top: 10px !important;
+    margin-bottom: 3.5% !important;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -85,10 +118,12 @@ footer
 
 h1
 {
+    margin: 0px;
     font-size: 50;
     font-weight: normal;
-    margin: 10px;
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 h2
@@ -101,7 +136,7 @@ h2
 
 h3
 {
-    font-size: 24;
+    font-size: 32;
     font-weight: normal;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -160,36 +195,56 @@ button /* Reformatting buttons */
 /*                                                                          */
 /****************************************************************************/
 
+.words /* Class for the div that contains all the words in the header */
+{
+    display: inline-block;
+}
+
 .title /* Class for the title of the header */
 {
     color: var(--overdose);
-    font-size: 85;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    font-family: "Real One Specific Script" !important;
+    font-size: 140;
+    margin-left: 110px;
+    margin-right: 75px;
+    display: inline-block;
+    position: relative;
+    top: -35px;
 }
 
 .subtitle /* Class for the subtitle of the header */ 
 {
     color: var(--overdose);
-    font-size: 40;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    font-size: 35;
+    margin-left: 350px;
+    display: block;
+    position: relative;
+    top: -100px;
 }
+
+.logo_header /* Class for butterfly silhouette image */
+{
+    width: 150px;
+    height: 150px;
+    margin-top: 22px;
+    display: inline-block;
+}
+
 
 nav /* Reformatting navigational stripe element */
 {
     background-color: var(--overdose);
     height: 30px;
-    padding: 5px 247px;
+    padding: 5px 150px;
     display: block;
+    position: relative;
+    top: -48px;
 }
 
 .nav_item /* Class for menu items in the nav menu*/
 {
     font-size: 26;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     margin: 0px 25px;
 
@@ -228,6 +283,38 @@ nav /* Reformatting navigational stripe element */
     text-align: center;
 }
 
+.boxes
+{
+    width: 120px; 
+    display: inline-block; 
+    vertical-align: top;
+
+    border-left-style: solid;
+    border-left-color: var(--limited);
+    border-left-width: 0.5px;
+
+    border-right-style: solid;
+    border-right-color: var(--limited);
+    border-right-width: 0.5px;
+}
+
+.boxes p 
+{
+    margin: 15px 0px;
+}
+
+.leftmost 
+{
+    border-left-style: none;
+}
+
+.rightmost 
+{
+    width: 125px;
+    border-right-style: none;
+}
+
+
 
 /****************************************************************************/
 /*                                                                          */
@@ -237,14 +324,24 @@ nav /* Reformatting navigational stripe element */
 
 .footer_text /* Class for the text in the footer */
 {
+    color: var(--overdose);
     font-size: 16;
-    margin: 10px;
+    padding-top: 30px;
 }
 
 .footer_text a /* Class to remove underline of footer links */
 {
     box-shadow: none;
 }
+
+.logo_footer /* Class for logo image */
+{
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
 
 /****************************************************************************/
 

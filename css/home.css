@@ -1,52 +1,24 @@
-
 .content 
 {
-    padding: 40px;
-    padding-left: 0px;
-    width: 560px;
+    padding: 40px 0px;
+    width: 720px;
     display: inline-block; 
     vertical-align: center;
     text-align: center;   
- 
-    /*display: table;
-    clear: both;*/
 }
 
-.sched
+.time 
 {
-    width: 120px; 
-    display: inline-block; 
-    vertical-align: top;
-
-    border-left-style: solid;
-    border-left-color: var(--limited);
-    border-left-width: 0.5px;
-
-    border-right-style: solid;
-    border-right-color: var(--limited);
-    border-right-width: 0.5px;
-}
-
-.leftmost 
-{
-    border-left-style: none;
-}
-
-.rightmost 
-{
-    border-right-style: none;
+    font-size: 36;
 }
 
 .big_img 
 {
     height: auto;
-    width:  335px;
-    padding: 40px;
+    width:  310px;
+    padding: 30px;
     display: inline-block; 
     vertical-align: top;
-
-    /*float: left;
-    position: relative;*/
 }
 
 .smol_img 
