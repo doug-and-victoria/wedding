@@ -11,12 +11,12 @@ function set_header()
     logo.src = "images/logo_white.png"
 
     var nav_stripe = document.createElement("nav");
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/\"><span>Home</span></a></div>\n"
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/pages/photos/\"><span>Photos</span></a></div>\n"
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/pages/q_and_a/\"><span>Q & A</span></a></div>\n"
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/pages/directions/\"><span>Directions</span></a></div>\n"
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/pages/accommodations/\"><span>Accommodations</span></a></div>\n"
-    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/{{site.baseurl}}/pages/registry/\"><span>Registry</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/\"><span>Home</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/pages/photos/\"><span>Photos</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/pages/q_and_a/\"><span>Q & A</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/pages/directions/\"><span>Directions</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/pages/accommodations/\"><span>Accommodations</span></a></div>\n"
+    nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"{{site.baseurl}}/pages/registry/\"><span>Registry</span></a></div>\n"
 
     var header = document.getElementsByTagName("header")[0]
     header.appendChild(header_div)
