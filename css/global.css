@@ -1,75 +1,41 @@
 
-/****************************************************************************/
-/*                                                                          */
-/* Custom Color and Font Setup                                              */
-/*                                                                          */
-/****************************************************************************/
+/* Custom color and font setup -------------------------------------------- */
 
 :root /* Setting color variables */
 {
-    --limited:   #0E4732; /*#164249;*/
-    --middleton: #CCD1CA; /*#AEBBBA;*/
-    --overdose:  #FFFFFF; /*#EEF0ED;*/
+    --limited:   #0E4732;
+    --middleton: #CCD1CA;
+    --overdose:  #FFFFFF;
 }
 
-@font-face /* Setting custom font */
-{
-    font-family: "Callient";
-    src: url(../fonts/callient.ttf) format("truetype");
-}
-
-@font-face /* Setting custom font */
-{
-    font-family: "Brittany Signature";
-    src: url(../fonts/brittany_signature.ttf) format("truetype");
-}
-
-@font-face /* Setting custom font */
-{
-    font-family: "August July";
-    src: url(../fonts/august_july.ttf) format("truetype");
-}
-
-@font-face /* Setting custom font */
+@font-face /* Cursive script used in header */
 {
     font-family: "Real One Specific Script";
     src: url(../fonts/real_one_specific_script.ttf) format("truetype");
 }
     
-@font-face /* Setting custom font */
+@font-face /* Serif font used throughout */
 {
     font-family: "Cormorant Garamond";
     src: url(../fonts/cormorant_garamond_medium.ttf) format("truetype");
 }
-    
-@font-face /* Setting custom font */
-{
-    font-family: "Poor Richard Regular";
-    src: url(../fonts/poor_richard_regular.ttf) format("truetype");
-}
-
-/****************************************************************************/
-/*                                                                          */
-/* Built-In Page Layout Reformatting                                        */
-/*                                                                          */
-/****************************************************************************/
-
-html 
+ 
+html /* Setup background image */
 {
     color: var(--limited);
     font-family: "Cormorant Garamond", Times New Roman, serif;
 
     background: url(../images/flowers7-40pct.jpg); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
 
-
-body { }
+   
+/* Header related classes --------------------------------------------------- */
 
 header
 {
@@ -83,10 +49,64 @@ header
 
 }
 
+header .title
+{
+    color: var(--overdose);
+    font-family: "Real One Specific Script" !important;
+    font-size: 140;
+    margin-left: 110px;
+    margin-right: 75px;
+    display: inline-block;
+    position: relative;
+    top: -35px;
+}
+
+header .subtitle
+{
+    color: var(--overdose);
+    font-size: 35;
+    margin-left: 350px;
+    display: block;
+    position: relative;
+    top: -100px;
+}
+
+header .wedding_logo 
+{
+    width: 150px;
+    height: 150px;
+    margin-top: 22px;
+    display: inline-block;
+}
+
 header a
 {
     box-shadow: none;
 }
+
+header nav 
+{
+    background-color: var(--overdose);
+    height: 30px;
+    padding: 5px 150px;
+    display: block;
+    position: relative;
+    top: -48px;
+}
+
+header .nav_item 
+{
+    font-size: 26;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 25px;
+
+    display: inline-block;
+    z-index: 1;
+}
+
+
+/* Header related classes --------------------------------------------------- */
 
 article
 {
@@ -194,63 +214,6 @@ button /* Reformatting buttons */
 /* Header Related Classes                                                   */
 /*                                                                          */
 /****************************************************************************/
-
-.words /* Class for the div that contains all the words in the header */
-{
-    display: inline-block;
-}
-
-.title /* Class for the title of the header */
-{
-    color: var(--overdose);
-    font-family: "Real One Specific Script" !important;
-    font-size: 140;
-    margin-left: 110px;
-    margin-right: 75px;
-    display: inline-block;
-    position: relative;
-    top: -35px;
-}
-
-.subtitle /* Class for the subtitle of the header */ 
-{
-    color: var(--overdose);
-    font-size: 35;
-    margin-left: 350px;
-    display: block;
-    position: relative;
-    top: -100px;
-}
-
-.logo_header /* Class for butterfly silhouette image */
-{
-    width: 150px;
-    height: 150px;
-    margin-top: 22px;
-    display: inline-block;
-}
-
-
-nav /* Reformatting navigational stripe element */
-{
-    background-color: var(--overdose);
-    height: 30px;
-    padding: 5px 150px;
-    display: block;
-    position: relative;
-    top: -48px;
-}
-
-.nav_item /* Class for menu items in the nav menu*/
-{
-    font-size: 26;
-    font-weight: bold;
-    text-align: center;
-    margin: 0px 25px;
-
-    display: inline-block;
-    z-index: 1;
-}
 
 
 /****************************************************************************/
