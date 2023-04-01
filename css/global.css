@@ -26,10 +26,10 @@ html /* Setup background image */
     font-family: "Cormorant Garamond", Times New Roman, serif;
 
     background: url(../images/flowers7-40pct.jpg); 
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
