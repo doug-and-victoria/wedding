@@ -8,7 +8,7 @@ function set_header()
 
     var logo = document.createElement("img");
     logo.className = "wedding_logo"
-    logo.src = "../../images/logo_white.png"
+    logo.src = "/wedding/images/logo_white.png"
 
     var nav_stripe = document.createElement("nav");
     nav_stripe.innerHTML+= "\t\t<div class=\"nav_item\"><a href=\"/wedding/\"><span>Home</span></a></div>\n"
