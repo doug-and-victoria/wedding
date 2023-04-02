@@ -1,36 +1,52 @@
 .content 
 {
-    padding: 40px 0px;
-    width: 720px;
-    display: inline-block; 
-    vertical-align: center;
     text-align: center;   
 }
 
-.time 
+@media screen and (orientation: landscape)
 {
-    font-size: 36;
+    .content 
+    {
+        padding: 40px 0px;
+        width: 720px;
+        display: inline-block; 
+        vertical-align: center;
+    }
+
+    .time 
+    {
+        font-size: 36px;
+    }
+
+    .big_img 
+    {
+        height: auto;
+        width:  310px;
+        padding: 30px;
+        display: inline-block; 
+        vertical-align: top;
+    }
 }
 
-.big_img 
+@media screen and (orientation: portrait)
 {
-    height: auto;
-    width:  310px;
-    padding: 30px;
-    display: inline-block; 
-    vertical-align: top;
+    .content 
+    {
+        width: 90%;
+        margin: 40px auto;
+        display: block;
+    }
+
+    .time 
+    {
+        font-size: 36px;
+    }
+
+    .big_img 
+    {
+        height: auto;
+        width:  70%;
+        margin: 40px auto;
+        display: block;
+    }
 }
-
-.smol_img 
-{
-    height: 200px;
-    width:  auto;
-    padding: 40px;
-    margin-top: 420px;
-    margin-left: -250px;
-
-    float: right;
-    position: relative;
-    z-index: 1;
-}
-

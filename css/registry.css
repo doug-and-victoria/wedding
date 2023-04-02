@@ -6,11 +6,14 @@
 
 .boxes 
 {
-    width: 300px;
+    width: 280px !important;
 }
+
+.center { margin: 37px 0px; }
 
 h3 
 {
+    font-size: 44px !important;
     font-weight: bold;
 }
 

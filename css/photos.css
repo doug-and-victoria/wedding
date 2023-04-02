@@ -4,53 +4,6 @@
 /*                                                                          */
 /****************************************************************************/
 
-img
-{
-    height: 450px;
-    width: auto;
-    margin: 10px;
-}
-a 
-{
-    box-shadow: none;
-}
-
-.row 
-{
-    text-align: center;
-}
-
-.column 
-{
-    display: inline-block;
-}
-
-.count-1 
-{
-    height: auto   !important;
-    width: 994.8px !important;
-}
-
-
-.count-3 
-{
-    height: auto    !important;
-    width: 318.27px !important;
-}
-
-.tall 
-{
-    height: 700px !important;
-    width: auto   !important;
-    margin-left: 58px;
-}
-
-.stacked 
-{
-    height: auto    !important;
-    width: 510px !important;
-}
-
 .lightbox 
 {
     /* Default to hidden */
@@ -87,4 +40,59 @@ a
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+img, .tall, .count-1, .count-3, .stacked
+{
+    width: auto;
+}
+
+img 
+{
+    margin: 10px;
+}
+
+a 
+{
+    box-shadow: none;
+}
+
+.row 
+{
+    text-align: center;
+}
+
+.column 
+{
+    display: inline-block;
+}
+
+.stacked 
+{
+    display: block;
+}
+
+.tall, .stacked 
+{
+    margin: 20px 10px;
+}
+
+
+@media screen and (orientation: landscape)
+{
+    img      { height: 450px; }
+    .count-1 { height: 665px; }       
+    .count-3 { height: 475px; }
+    .tall    { height: 695px !important; }
+    .stacked { height: 338px !important; }
+}
+
+@media screen and (orientation: portrait) 
+{
+    img      { height: 355px; }
+    .count-1 { height: 527px !important; }       
+    .count-3 { height: 370px !important; }
+    .tall    { height: 550px !important; }
+    .stacked { height: 264px !important; }
 }
