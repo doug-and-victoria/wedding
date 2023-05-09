@@ -10,10 +10,10 @@
 
 @font-face /* Cursive script used in header */
 {
-    font-family: "Real One Specific Script";
-    src: url(../fonts/real_one_specific_script.ttf) format("truetype");
+    font-family: "Cimochi";
+    src: url(../fonts/cimochi.ttf) format("truetype");
 }
-    
+
 @font-face /* Serif font used throughout */
 {
     font-family: "Cormorant Garamond";
@@ -103,7 +103,7 @@ header
 header .title
 {
     color: var(--overdose);
-    font-family: "Real One Specific Script" !important;
+    font-family: "Cimochi" !important;
     display: inline-block;
     position: relative;
 }
@@ -241,15 +241,16 @@ article .rightmost
     header 
     {
         width: 1200px;
-        height: 265px;
+        height: 280px;
         margin: 2.5% auto 10px auto;
     }
    
     header .title 
     {
-        font-size: 140px;
-        margin-left: 110px;
-        margin-right: 75px;
+        font-size: 110px;
+        margin-left: 120px;
+        margin-right: 100px;
+        margin-bottom: 55px;
         top: -35px;
     }
 
@@ -335,16 +336,17 @@ article .rightmost
     header 
     {
         width: 900px;
-        height: 360px;
+        height: 370px;
         margin: 2.5% auto 10px auto;
     }
    
     header .title 
     {
-        font-size: 120px;
+        font-size: 100px;
         margin-left: 50px;
         margin-right: 30px;
-        top: -55px;
+        margin-bottom: 50px;
+        top: -45px;
     }
  
     header nav 
