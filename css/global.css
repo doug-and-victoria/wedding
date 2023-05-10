@@ -100,30 +100,22 @@ header
     display: block;
 }
 
+header .titles_div 
+{
+    text-align: center;
+}
+
 header .title
 {
     color: var(--overdose);
     font-family: "Cimochi" !important;
     display: inline-block;
-    position: relative;
 }
 
 header .subtitle
 {
     color: var(--overdose);
     font-size: 35px;
-    margin-left: 350px;
-    display: block;
-    position: relative;
-    top: -100px;
-}
-
-header .wedding_logo 
-{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-    display: inline-block;
 }
 
 header a
@@ -136,8 +128,7 @@ header nav
     background-color: var(--overdose);
     font-weight: bold;
     text-align: center;
-    display: block;
-    position: relative;
+    display: inline-block;
 }
 
 header .nav_item 
@@ -241,24 +232,59 @@ article .rightmost
     header 
     {
         width: 1200px;
-        height: 280px;
+        height: 275px;
         margin: 2.5% auto 10px auto;
     }
-   
+ 
+    header .above_nav_stripe_div 
+    {
+        width: 1200px;
+        height: 200px;
+        display: inline-block;
+    }
+ 
+    header .titles_div 
+    {
+        width: 900px;
+        height: 200px; 
+        margin-left: 55px;
+        float: left;
+    }
+ 
     header .title 
     {
-        font-size: 110px;
-        margin-left: 120px;
-        margin-right: 100px;
-        margin-bottom: 55px;
-        top: -35px;
+        font-size: 80px;
+        margin: 40px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    header .subtitle 
+    {
+        font-size: 30px;
+        margin: 15px 0px 0px 40px;
+        padding: 0px;
+    }
+
+    header .wedding_logo_div 
+    {
+        width: 150px;
+        height: 200px;
+        margin-right: 55px;
+        float: right; 
+    }
+ 
+    header .wedding_logo 
+    {
+        width: 160px;
+        height: 160px;
+        margin: 20px 0px;
     }
 
     header nav 
     {
+        width: 1200px;
         height: 30px;
         padding: 5px 0px;
-        top: -48px;
     }
 
     header .nav_item 
@@ -336,19 +362,54 @@ article .rightmost
     header 
     {
         width: 900px;
-        height: 370px;
+        height: 480px;
         margin: 2.5% auto 10px auto;
     }
-   
-    header .title 
+ 
+    header .above_nav_stripe_div 
     {
-        font-size: 100px;
-        margin-left: 50px;
-        margin-right: 30px;
-        margin-bottom: 50px;
-        top: -45px;
+        width: 900px;
+        height: 310px;
+        display: inline-block;
     }
  
+    header .titles_div 
+    {
+        width: 570px;
+        height: 310px; 
+        margin-left: 65px;
+        float: left;
+    }
+ 
+    header .title 
+    {
+        font-size: 90px !important;
+        margin: 50px 0px 0px 0px;
+        padding: 0px;
+    }
+ 
+    header .subtitle 
+    {
+        font-size: 30px;
+        margin: 5px 0px 0px 150px;
+        padding: 0px;
+    }
+
+    header .wedding_logo_div 
+    {
+        width: 200px;
+        height: 310px;
+        margin-right: 55px;
+        float: right; 
+    }
+ 
+    header .wedding_logo 
+    {
+        width: 200px;
+        height: 200px;
+        margin: 60px 0px 80px 0px;
+    }
+
     header nav 
     {
         height: 120px;
